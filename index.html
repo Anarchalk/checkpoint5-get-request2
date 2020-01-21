@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Images of specific dog breed</title>
 </head>
+
 <body>
-    <h2>Images of Dog Breed</h2>
-    <p>Enter a breed</p>
-    <section class="main">
-        <form>
-            <input type="text" name="breed" aria-label="breed" id="hariu" placeholder="boxer">
-            <input type="submit" id="bttn" value="Submit">
-        </form>
-    </section>
-    <section class="results hidden">
-        <img class="results-img" alt="placehodler">
-      </section>
+    <main>
+        <h2>Images of Dog Breed</h2>
+        <p>Enter a breed</p>
+        <section class="main">
+            <form>
+                <input type="text" name="breed" aria-label="breed" id="hariu" placeholder="boxer">
+                <input type="submit" id="bttn" value="Submit">
+            </form>
+        </section>
+        <section class="results hidden">
+            <img class="results-img" alt="placehodler">
+        </section>
+    </main>
+    <div id="js-display" class="container"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
+
 </body>
+
 </html>

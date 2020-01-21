@@ -2,9 +2,27 @@ function getDogImage (getValue) {
      fetch('https://dog.ceo/api/breed/'+getValue+'/images/random')
     .then(response => response.json())
     .then(responseJson => console.log(displayResults(responseJson)))
-   .catch(error => alert("Something went wrong. Try again later"));
+
 }
   
+
+// if (responseJson.status === "error") {
+//   displayErrorMessage(responseJson.message);
+// } else {
+//   displayResults(responseJson);
+// }
+// .catch(error => displayErrorMessage(error));
+// } else {
+// displayErrorMessage("please enter a breed");
+
+// //error message
+// function displayErrorMessage (errorMsg) {
+//   let errorStr = `<h3> ${errorMsg}</h3>`
+//   $( $('#js-display').html(errorStr)
+// }
+
+
+//display result
 function displayResults(responseJson) {
     //replace the existing image with the new one
     $('.results-img').replaceWith(
